@@ -1,0 +1,463 @@
+@import "reset.css";
+
+/* add font awesome */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css");
+
+html {
+  --dark-1: #111;
+  --dark-2: #555;
+  --dark-3: #777;
+  --dark-4: #999;
+  --light-2: #eee;
+  --pink: #ff3998;
+  --orange: #ff8139;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+/* Common */
+
+.unlisted {
+  margin: 0;
+  padding-left: 0;
+  list-style-type: none;
+}
+
+.nft {
+  color: var(--dark-1);
+  font-size: 48px;
+  font-weight: 900;
+  margin-bottom: 24px;
+}
+.launching {
+  color: var(--pink, #ff3998);
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 1.6px;
+  margin-bottom: 24px;
+}
+
+.btn {
+  border-radius: 50px;
+  color: var(--dark-1);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 150%;
+  border: 4px solid var(--pink);
+  width: 188px;
+  height: 75px;
+}
+
+/* HEADER=========== */
+.mainHeader .container {
+  padding: 32px 32px;
+}
+
+.mainHeader {
+  background-color: var(--primary-dark);
+}
+.mainHeader .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mainHeader .logo {
+  display: inline-block;
+  color: var(--dark-1);
+}
+.burger {
+  color: var(--dark-4);
+  font-size: 24px;
+}
+
+.nav {
+  display: none;
+}
+/* /Header */
+
+/* Hero========== */
+.hero {
+  overflow-x: hidden;
+}
+.hero .container {
+  position: relative;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  margin-bottom: 48px;
+}
+
+.hero .lead {
+  font-size: 20px;
+  margin-bottom: 32px;
+}
+.hero-img {
+  position: absolute;
+  overflow-x: hidden;
+  left: 200px;
+  aspect-ratio: 1;
+}
+
+/* Free NFt for early birds===== */
+.earlyBirds .container {
+  background-image: url(/Arminas_Griesius_html_css_darbas/images/background.svg);
+  background-repeat: no-repeat;
+  background-position: -50px;
+  padding-top: 126px;
+  padding-bottom: 60px;
+}
+.earlyBirds .earlyBirdsH {
+  margin-bottom: 16px;
+  color: var(--dark-1);
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.earlyBirds .lead {
+  color: var(--dark-1, #111);
+  padding-bottom: 40px;
+  font-size: 20px;
+  line-height: 150%;
+}
+/* /Free NFT for early birds */
+
+/* COMPANIES =========*/
+.companies .container {
+  margin-bottom: 55px;
+}
+
+.companies .boomerang,
+.opendoor {
+  display: none;
+}
+.companies .companies-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 20px;
+  row-gap: 30px;
+  align-items: center;
+}
+/* /COMPANIES */
+
+/* <!-- LE Super Rare Auction=============== --> */
+.auction .container {
+  margin-bottom: 40px;
+}
+.auction .auctionH {
+  margin-bottom: 16px;
+  color: var(--dark-1);
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.auction .lead {
+  margin-bottom: 8px;
+  color: var(--dark-2);
+  font-size: 20px;
+  line-height: 150%;
+}
+.auction .lead a {
+  text-decoration: underline;
+}
+/* /LE Super Rare Auction */
+
+/* GLOOP SERIES============== */
+.gloopSeries {
+  overflow-x: hidden;
+}
+
+.gloopSeries .gridContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  width: 100%;
+  gap: 40px;
+  margin-bottom: 92px;
+}
+.gloopSeries .gridBox {
+  overflow: hidden;
+  display: grid;
+  width: 290px;
+  height: 400px;
+  background-color: var(--light-2);
+  border-radius: 17px;
+}
+
+.gloopSeries .gloopLeft {
+  margin-left: 24px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+.gloopSeries .gloopLeftTop {
+  color: var(--orange);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 100%;
+  text-transform: uppercase;
+}
+.gloopSeries .gloopLeftMiddle {
+  margin-bottom: 12px;
+  color: var(--dark-1);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 100%;
+}
+
+.gloopSeries .gloopLeftBottom {
+  color: var(--dark-3);
+  font-size: 18px;
+  line-height: 100%;
+}
+
+.gloopSeries .gloopRight {
+  text-align: right;
+  margin-right: 24px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.gloopSeries .gloopRightTop {
+  color: var(--dark-3);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 100%;
+  text-transform: uppercase;
+}
+
+.gloopSeries .gloopRightMiddle {
+  display: flex;
+  justify-content: flex-end;
+  gap: 4px;
+  align-items: center;
+  margin-bottom: 12px;
+  color: var(--dark-1);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 100%;
+}
+
+.gloopSeries .gloopRightBottom {
+  color: var(--dark-3);
+  font-size: 18px;
+  line-height: 100%;
+}
+
+.gloopSeries .gloopImg {
+  grid-column: span 2;
+}
+
+/* /GLOOP SERIES */
+
+/* An NFT Like No Other 2========== */
+.noOther .container {
+  position: relative;
+  overflow-x: hidden;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  padding-bottom: 0;
+  margin-top: 64px;
+  margin-bottom: 64px;
+}
+.noOther .lead {
+  font-size: 20px;
+  margin-bottom: 32px;
+}
+.noOther-img {
+  position: absolute;
+  bottom: 0;
+}
+.noOther .btn {
+  margin-bottom: 120px;
+}
+
+.hr {
+  height: 2px;
+  width: 100%;
+  background-color: var(--light-2);
+  margin-left: auto;
+  margin-right: auto;
+}
+/* /An NFT like no other */
+
+/* FOOTER================= */
+.footerImg {
+  margin-bottom: 30px;
+}
+.footerText {
+  margin-bottom: 32px;
+}
+.footerIcons {
+  margin-bottom: 64px;
+  color: var(--dark-4);
+}
+.footerBlock h3 {
+  margin-bottom: 28px;
+}
+.exclusive .container {
+  color: var(--dark-2);
+}
+.footerTop {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.footerBlock {
+  margin-bottom: 40px;
+}
+.footerBlock-1 {
+  grid-column: 1 / span 2;
+  margin-bottom: 0;
+}
+.FooterLi {
+  margin-bottom: 12px;
+}
+.footerCopyright {
+  color: var(--dark-4);
+}
+.footerLaunching {
+  display: none;
+}
+/* /FOOTER */
+
+@media screen and (min-width: 1000px) {
+  /* common */
+  .container {
+    margin: 0px 80px;
+  }
+  /* Header ==========*/
+  .mainHeader .container {
+    margin-top: 70px;
+    margin-bottom: 180px;
+    padding: 0;
+  }
+
+  .burger {
+    display: none;
+  }
+  .nav {
+    display: flex;
+  }
+  .mainMenu {
+    display: flex;
+    color: var(--dark-2);
+    gap: 28px;
+  }
+  .navItem {
+    transition: color 0.3s;
+    font-size: 20px;
+    height: 20px;
+  }
+
+  .navItem:hover {
+    color: var(--pink);
+  }
+
+  /* /Header */
+
+  /* HERO======= */
+  .hero .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .nft {
+    font-size: 96px;
+    margin-bottom: 32px;
+  }
+  .hero .lead {
+    margin-bottom: 41px;
+    width: 537px;
+  }
+  .hero-img {
+    position: static;
+  }
+  /* /Hero */
+
+  /* Free NFt for early birds===== */
+  .earlyBirds .container {
+    background-position: 27px;
+    padding-top: 126px;
+    padding-bottom: 32px;
+    background-position: 0;
+    border-radius: 15px;
+    margin-bottom: 125px;
+  }
+  .earlyBirdsText {
+    padding-left: 67px;
+  }
+  /* /Free NFt for early birds */
+
+  /* COMPANIES============== */
+  .companies .container {
+    padding-left: 0;
+    margin-bottom: 125px;
+  }
+  .companies .boom {
+    display: none;
+  }
+
+  .companies .boomerang,
+  .opendoor {
+    display: inline;
+  }
+
+  .companies .companies-grid {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    row-gap: 23px;
+  }
+  /* /COMPANIES */
+
+  /* <!-- LE Super Rare Auction=============== --> */
+  .auction .container {
+    padding-left: 0;
+    margin-bottom: 56px;
+  }
+  .auction .auctionH {
+    padding-bottom: 24px;
+  }
+
+  /* <!-- /LE Super Rare Auction --> */
+
+  /* GLOOP SERIES======== */
+  .gloopSeries {
+    padding: 0;
+  }
+  /* /GLOOP SERIES */
+
+  /* An NFT Like No Other 2========== */
+
+  .noOther .container {
+    margin-bottom: 120px;
+    overflow-x: visible;
+  }
+
+  .noOther .nft {
+    font-size: 56px;
+  }
+
+  .noOther .lead {
+    width: 573px;
+    height: 60px;
+  }
+
+  /* /An NFT like no other */
+
+  /* FOOTER============= */
+  .footerTop {
+    grid-template-columns: 4fr 1fr 1fr 1fr 1fr;
+  }
+
+  .footerLaunching {
+    display: inline;
+    color: var(--dark-4);
+  }
+
+  .bottomBlock {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  /* /FOOTER */
+}
